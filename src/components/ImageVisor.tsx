@@ -3,13 +3,12 @@
 import { useState } from "react";
 
 export const ImageVisor = () => { 
-  const apiUrl = "http://localhost:1312/";
   const [image, setImage] = useState("/logo.png");
   const [imageId, setImageId] = useState("");
   
   const getImage = async (id: string) => {
     try {
-      const response = await fetch( apiUrl + "api/images/" + id, { cache: "no-store" });
+      const response = await fetch( "/api/images/" + id, { cache: "no-store" });
       return response.json();
     } catch (error) {
       console.error(error);
