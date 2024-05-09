@@ -1,0 +1,5 @@
+:root {
+  --background-color-dark: #101218;
+  --background-color-light: #1a1d27;
+  --background-gradient-color: linear-gradient(168deg, #36364e 10%, #453246 80%);
+}
