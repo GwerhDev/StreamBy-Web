@@ -1,15 +1,14 @@
 .container {
-  background: linear-gradient(168deg, #4f4f969a 10%, #39395a9a 80%);
+  background: linear-gradient(168deg, #4f4f969a 10%, #59395a9a 80%);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding-right: 25px;
+  border-bottom: solid 1px #323032;
 }
 
 .logo {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   display: flex;
   gap: .2rem;
   height: 50px;
