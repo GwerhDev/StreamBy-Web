@@ -4,7 +4,7 @@
 
 :root {
   --background-color-dark: #101218;
-  --background-color-light: #36365a;
+  --background-color-light: #1a1d27;
 }
 
 * {
@@ -32,6 +32,13 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -87,8 +94,7 @@ button {
   padding: .5rem;
   border: none;
   outline: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
   border-bottom: 1px solid rgb(95, 69, 189);
   background-color: rgba(24, 24, 34, 0.603);
   padding-left: 1.3rem;

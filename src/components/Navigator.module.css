@@ -1,7 +1,10 @@
 .container {
-  background-color: var(--background-color-light);
+  background: linear-gradient(168deg, rgba(79, 79, 150, 0.603) 10%, rgba(57, 57, 90, 0.603) 80%);
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 50px;
 }
 
 .logo {
@@ -12,4 +15,5 @@
   height: 50px;
   align-items: center;
   justify-content: center;
+  padding-top: .2rem;
 }
