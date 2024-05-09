@@ -110,13 +110,6 @@ a {
   }
 }
 
-.title {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  display: flex;
-  gap: .2rem;
-}
-
 h1 {
   color: white;
   background-color: rgba(24, 24, 34, 0.603);

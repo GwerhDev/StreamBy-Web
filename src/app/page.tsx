@@ -4,11 +4,12 @@ import s from './page.module.css';
 export default function Home() {
   return (
     <main className={s.main}>
-      <span className="title">
-        <img src="/clan-shield-icon.svg" alt="Escudo" />
-        <h1>Gwerhdinary</h1>
-      </span>
-      <ImageVisor/>
+      <div className={s.titleContainer}>
+        <span className={s.logo}>
+          <img src="streamby-logo.svg" alt="logo" width={"200px"} />
+        </span>
+      </div>
+      <ImageVisor />
       <i><span className="info-icon">i</span>
         <p>Plataforma de almacenamiento de <a href="https://gwerh.netlify.app" target="_blank">Gwerh</a></p>
       </i>
