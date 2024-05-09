@@ -7,5 +7,5 @@ Producto open source desarrollado por cooperativa de desarrolladores TerminalKil
 ## Colaboradores
 | Colaborador                                                   |                 Rol                       |
 | ------------------------------------------------------------- | ----------------------------------------- | 
-| [Gerardo Guarda](https://github.com/GwerhDev)                 | Product Owner, Desarrollador              |
+| [Gerardo Guarda](https://github.com/GwerhDev)                 | Product Owner, Desarrollador, Diseñador   |
 | [Valeria Arellano](https://github.com/ValeriaArellano0011)    | Desarrolladora                            |
