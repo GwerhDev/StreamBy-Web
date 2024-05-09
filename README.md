@@ -5,6 +5,7 @@ Producto open source desarrollado por cooperativa de desarrolladores TerminalKil
 ![streamby-logo-background](https://github.com/GwerhDev/StreamBy-Client/assets/105039526/95e48038-b807-46cb-ad52-e5226025f30f)
 
 ## Colaboradores
-
-[Gerardo Guarda](https://github.com/GwerhDev)
-[Valeria Arellano](https://github.com/ValeriaArellano0011)
+| Colaborador                                                   |                 Rol                       |
+| ------------------------------------------------------------- | ----------------------------------------- | 
+| [Gerardo Guarda](https://github.com/GwerhDev)                 | Product Owner, Desarrollador              |
+| [Valeria Arellano](https://github.com/ValeriaArellano0011)    | Desarrolladora                            |
