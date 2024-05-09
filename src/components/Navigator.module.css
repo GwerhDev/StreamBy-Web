@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-right: 50px;
+  padding-right: 25px;
 }
 
 .logo {
@@ -16,4 +16,6 @@
   align-items: center;
   justify-content: center;
   padding-top: .2rem;
+  margin-left: -25px;
 }
+
