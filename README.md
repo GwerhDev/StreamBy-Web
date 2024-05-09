@@ -2,7 +2,7 @@
 
 Producto Open Source desarrollado por la Cooperativa de Desarrolladores TerminalKiller Project
 
-![streamby-logo-background](https://github.com/GwerhDev/StreamBy-Client/assets/105039526/bb3af306-7f92-4904-8485-927a5c4f427b)
+![streamby-logo-background](https://github.com/GwerhDev/StreamBy-Client/assets/105039526/e115eed8-bf12-4fe4-83ca-721d890c03fc)
 
 ## Colaboradores
 | Colaborador                                                   |                 Rol                       |
