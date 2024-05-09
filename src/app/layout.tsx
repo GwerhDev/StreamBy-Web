@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Gwerdinary | Plataforma de almacenamiento de Gwerh',
-  description: 'App NextJs de uso personal que retorna la URL o ID de las imágenes guardadas en la base de datos para ser renderizadas en mis apps.',
+  title: 'StreamBy | Api y Servicios',
+  description: 'Servicios de almacenamiento y transmisión de archivos',
 }
 
 export default async function RootLayout({
