@@ -8,7 +8,7 @@ export const Navigator = () => {
   return (
     <nav className={s.container}>
       <span className={s.logo}>
-        <img src="streamby-logo.svg" alt="logo" width={"200px"} />
+        <img src="streamby-logo.svg" alt="logo" width={"110px"} />
       </span>
       <NavMenu />
       <NavAuth />
