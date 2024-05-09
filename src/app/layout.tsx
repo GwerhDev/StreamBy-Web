@@ -1,5 +1,6 @@
 import connectDB from '@/app/api/integrations/mongodb';
 import './globals.css';
+import './root.css';
 import { Inter } from 'next/font/google';
 import { Navigator } from '@/components/Navigator';
 
