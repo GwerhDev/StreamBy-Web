@@ -1,0 +1,15 @@
+.container {
+  background-color: var(--background-color-light);
+  width: 100%;
+  display: flex;
+}
+
+.logo {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  gap: .2rem;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
