@@ -1,6 +1,6 @@
 import s from './UnderConstruction.module.css';
 
-export default function UnderConstruction() {
+export function UnderConstruction() {
   return (
     <i><span className="info-icon">i</span>
       <p>Plataforma en desarrollo</p>
