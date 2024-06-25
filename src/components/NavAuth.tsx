@@ -1,9 +1,12 @@
-import s from '@/components/NavAuth.module.css';
+import s from './NavAuth.module.css';
+import { ActionButton } from './Buttons/ActionButton';
+import { PrimaryButton } from './Buttons/PrimaryButton';
 
 export const NavAuth = () => {
   return (
-    <span>
-      <button className={s.loginButton}>Login</button>
+    <span className={s.container}>
+      <ActionButton text="Get started" />
+      <PrimaryButton text="Sign in" />
     </span>
   )
 }

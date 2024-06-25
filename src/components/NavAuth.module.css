@@ -1,7 +1,4 @@
-.loginButton {
-  transition-duration: .4s;
-}
-
-.loginButton:hover {
-  color: white;
+.container {
+  display: flex;
+  gap: var(--size-2);
 }

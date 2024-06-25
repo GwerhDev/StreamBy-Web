@@ -2,15 +2,12 @@
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background-color-dark);
-  font-family: Poppins;
-  overflow-x: hidden;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  max-width: var(--max-width);
 }
 
 .titleContainer {

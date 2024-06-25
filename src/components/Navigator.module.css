@@ -1,13 +1,12 @@
 .container {
-  background: var(--background-gradient-color);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding-right: 25px;
   padding-left: 25px;
-  border-bottom: solid 1px #525252;
   gap: 1.5rem;
+  max-width: var(--max-width);
 }
 
 .logo {
