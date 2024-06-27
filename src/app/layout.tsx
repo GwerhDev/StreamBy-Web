@@ -1,7 +1,7 @@
-import connectDB from '@/app/api/integrations/mongodb';
-import './globals.css';
 import './root.css';
+import './globals.css';
 import { Inter } from 'next/font/google';
+import connectDB from '@/app/api/integrations/mongodb';
 import { Navigator } from '@/components/Navigator';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -11,11 +11,7 @@ export const metadata = {
   description: 'Servicios de almacenamiento y transmisión de archivos',
 }
 
-export default async function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   try {
     await connectDB();
   } catch (error) {
