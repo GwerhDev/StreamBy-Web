@@ -8,7 +8,7 @@
 
 .innerContainer {
   gap: var(--size-2);
-  max-width: 1440;
+  max-width: 1440px;
   text-align: center;
   display: flex;
   flex-direction: column;

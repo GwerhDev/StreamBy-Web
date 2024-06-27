@@ -2,8 +2,11 @@ import s from './UnderConstruction.module.css';
 
 export function UnderConstruction() {
   return (
-    <i><span className="info-icon">i</span>
-      <p>Plataforma en desarrollo</p>
-    </i>
+    <div className={s.container}>
+      <i>
+        <span className={s.infoIcon}>i</span>
+        <p>Under construction</p>
+      </i>
+    </div>
   )
 }

@@ -3,8 +3,8 @@
   width: 100%;
   min-height: 500px;
   display: flex;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-left: var(--size-6);
+  padding-right: var(--size-6);
 }
 
 .leftSection,
@@ -21,7 +21,7 @@
 
 .rightSection {
   align-items: flex-end;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .icon {

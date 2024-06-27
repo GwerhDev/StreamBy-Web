@@ -1,6 +1,6 @@
 import s from './Presentation.module.css';
-import { ActionButton } from './Buttons/ActionButton';
-import { SecondaryButton } from './Buttons/SecondaryButton';
+import { ActionButton } from '../Buttons/ActionButton';
+import { SecondaryButton } from '../Buttons/SecondaryButton';
 
 export const Presentation = () => {
   return (
@@ -17,7 +17,7 @@ export const Presentation = () => {
         </span>
       </section>
       <section className={s.rightSection}>
-        <img src="landing-image.png" alt="" width={300} />
+        <img src="landing-image.png" alt="" width={"100%"} />
       </section>
     </div>
   )
