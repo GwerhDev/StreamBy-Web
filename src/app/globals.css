@@ -110,25 +110,13 @@ input[type=text]:focus-visible {
 i {
   width: 340px;
   color: rgb(219, 219, 219);
-  background-color: rgba(24, 24, 34, 0.603);
-  border-radius: 5px;
   padding-top: .6rem;
   padding-bottom: .6rem;
-  margin-top: 2rem;
   font-size: small;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-}
-
-.info-icon {
-  margin: 0;
-  padding: 3px;
-  width: 20px;
-  border-radius: 100%;
-  text-align: center;
-  background-color: rgb(66, 87, 107);
 }
 
 ::-webkit-scrollbar {
