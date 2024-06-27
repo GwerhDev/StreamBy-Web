@@ -1,6 +1,6 @@
 import s from './Presentation.module.css';
-import { ActionButton } from './Buttons/ActionButton';
-import { SecondaryButton } from './Buttons/SecondaryButton';
+import { ActionButton } from '../Buttons/ActionButton';
+import { SecondaryButton } from '../Buttons/SecondaryButton';
 
 export const Presentation = () => {
   return (

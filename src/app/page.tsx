@@ -1,8 +1,12 @@
 import s from './page.module.css';
-import { Partners } from '@/components/Partners';
-import { Features } from '@/components/Features';
-import { Presentation } from '@/components/Presentation';
+import { Partners } from '@/components/Sections/Partners';
+import { Features } from '@/components/Sections/Features';
+import { Presentation } from '@/components/Sections/Presentation';
+import { Documentation } from '@/components/Sections/Documentation';
+
 import { UnderConstruction } from '@/components/UnderConstruction';
+import { Testimonials } from '@/components/Sections/Testimonials';
+import { Footer } from '@/components/Sections/Footer';
 
 export default function Home() {
   return (
@@ -10,6 +14,9 @@ export default function Home() {
       <Presentation />
       <Partners />
       <Features />
+      <Documentation />
+      <Testimonials />
+      <Footer />
       <UnderConstruction />
     </main>
   )

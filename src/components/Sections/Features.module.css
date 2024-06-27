@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   text-align: center;
-  padding-top: var(--size-12);
+  padding: var(--size-12);
   padding-left: var(--size-6);
   padding-right: var(--size-6);
   flex-direction: column;
@@ -17,8 +17,7 @@
 
 .card {
   width: 100%;
-  min-height: 100px;
-  aspect-ratio: 16/9;
+  aspect-ratio: 1;
   border-radius: var(--size-1);
   background: var(--background-color-dark-transparency);
 }

@@ -1,4 +1,4 @@
-import { ActionButton } from './Buttons/ActionButton';
+import { ActionButton } from '../Buttons/ActionButton';
 import s from './Features.module.css';
 
 export const Features = () => {
