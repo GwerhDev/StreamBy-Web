@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: center;
   padding: var(--size-12);
+  padding-left: var(--size-6);
+  padding-right: var(--size-6);
   background: var(--background-color-dark-transparency);
 }
 
@@ -17,6 +19,8 @@
 }
 
 .innerContainer ul {
+  margin: 0;
+  padding: 0;
   width: 100%;
   display: flex;
   flex-direction: column;

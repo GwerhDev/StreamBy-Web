@@ -3,8 +3,8 @@
   width: 100%;
   min-height: 500px;
   display: flex;
-  padding-right: var(--size-6);
   padding-left: var(--size-6);
+  padding-right: var(--size-6);
 }
 
 .leftSection,
