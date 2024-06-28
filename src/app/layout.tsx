@@ -1,15 +1,15 @@
 import './root.css';
 import './globals.css';
-import { Inter } from 'next/font/google';
 import connectDB from '@/app/api/integrations/mongodb';
+import { Inter } from 'next/font/google';
 import { Navigator } from '@/components/Navigator';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'StreamBy | API y Servicios',
-  description: 'Servicios de almacenamiento y transmisión de archivos',
-}
+  title: 'StreamBy | API & Services',
+  description: 'Storage & Streaming services',
+};
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   try {
@@ -24,6 +24,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           {children}
         </body>
       </html>
-    )
-  }
-}
+    );
+  };
+};
