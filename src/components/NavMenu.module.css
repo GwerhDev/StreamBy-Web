@@ -1,5 +1,5 @@
 .container {
-  display: flex;
-  font-size: 14px;
   width: 100%;
+  font-size: 14px;
+  display: flex;
 }

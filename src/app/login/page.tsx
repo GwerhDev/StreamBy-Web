@@ -2,8 +2,8 @@ import { LoginForm } from '@/components/Forms/LoginForm';
 
 export default function LoginPage() {
   return (
-    <main>
+    <div className='dashboard-container'>
       <LoginForm/>
-    </main>
+    </div>
   );
 };
