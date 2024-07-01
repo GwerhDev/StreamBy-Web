@@ -7,8 +7,6 @@ import { Presentation } from '@/components/Sections/Presentation';
 import { Testimonials } from '@/components/Sections/Testimonials';
 import { Documentation } from '@/components/Sections/Documentation';
 
-import { UnderConstruction } from '@/components/UnderConstruction';
-
 export default function Home() {
   return (
     <main>
@@ -18,7 +16,6 @@ export default function Home() {
       <Documentation />
       <Testimonials />
       <Footer />
-      <UnderConstruction />
     </main>
   );
 };

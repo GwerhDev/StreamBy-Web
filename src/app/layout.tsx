@@ -3,6 +3,7 @@ import './globals.css';
 import connectDB from '@/app/api/integrations/mongodb';
 import { Inter } from 'next/font/google';
 import { Navigator } from '@/components/Navigator';
+import { UnderConstruction } from '@/components/UnderConstruction';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <body className={inter.className}>
           <Navigator />
           {children}
+          <UnderConstruction />
         </body>
       </html>
     );
