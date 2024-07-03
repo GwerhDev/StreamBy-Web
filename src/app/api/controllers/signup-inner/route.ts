@@ -9,11 +9,12 @@ export async function POST(request: NextRequest) {
   try {
     const req = await request.json();
     const { username, password, email } = req;
-    const existingUser = await UserModel.findOne({ email: email });
-  
+
     if (!username || !password || !email) return new NextResponse(JSON.stringify({ error: message.signup.error }), {
       status: 400
     });
+
+    const existingUser = await UserModel.findOne({ email: email });
   
     if (existingUser) {
       const tokenData = {

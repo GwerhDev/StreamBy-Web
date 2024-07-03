@@ -173,3 +173,14 @@ a:hover {
   flex-direction: column;
   justify-content: center;
 }
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  min-height: 800px;
+  background: var(--background-color-light);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

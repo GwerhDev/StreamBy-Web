@@ -35,7 +35,7 @@ export const SignupForm = () => {
       const data = await response.json();
 
     } catch (error) {
-    
+      console.error(error);
     }
   }
 

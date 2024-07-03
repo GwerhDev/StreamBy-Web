@@ -1,12 +1,37 @@
 "use client"
 
 import s from './LoginForm.module.css';
-import { FormEvent } from 'react';
+import { FormEvent, useState } from 'react';
 
 export const LoginForm = () => {
-  function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    console.log('Login');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  function handleEmail(e: any) {
+    setEmail(e.target.value);
+  }
+
+  function handlePassword(e: any) {
+    setPassword(e.target.value);
+  }
+
+  async function handleSubmit(e: FormEvent) {
+    try {
+      e.preventDefault();
+      const formData = { email, password };
+
+      const response = await fetch('/api/controllers/login-inner', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      const data = await response.json();
+
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   return (
@@ -15,11 +40,11 @@ export const LoginForm = () => {
       <ul className={s.container}>
         <li className={s.inputContainer}>
           <label htmlFor="">Email</label>
-          <input type="email" placeholder='example@mail.com' />
+          <input onInput={handleEmail} type="email" placeholder='example@mail.com' />
         </li>
         <li className={s.inputContainer}>
           <label htmlFor="">Password</label>
-          <input type="password" placeholder='********' />
+          <input onInput={handlePassword} type="password" placeholder='********' />
         </li>
       </ul>
       <button>Log in</button>
