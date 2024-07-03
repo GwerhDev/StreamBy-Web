@@ -4,4 +4,6 @@ const credentialSchema = new mongoose.Schema({
   active: { type: Boolean, required: true },
 });
 
-export const CredentialModel = mongoose.model('Credential', credentialSchema);
+const CredentialModel = mongoose.models.Credential || mongoose.model('Credential', credentialSchema);
+
+export default CredentialModel;
