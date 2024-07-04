@@ -2,8 +2,8 @@
 
 import s from './NavAuth.module.css';
 import { useRouter } from 'next/navigation';
-import { ActionButton } from './Buttons/ActionButton';
-import { PrimaryButton } from './Buttons/PrimaryButton';
+import { ActionButton } from '@/components/Buttons/ActionButton';
+import { PrimaryButton } from '@/components/Buttons/PrimaryButton';
 
 export const NavAuth = () => {
   const router = useRouter();

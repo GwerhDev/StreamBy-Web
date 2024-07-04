@@ -2,7 +2,7 @@ import './root.css';
 import './globals.css';
 import connectDB from '@/app/api/integrations/mongodb';
 import { Inter } from 'next/font/google';
-import { Navigator } from '@/components/Navigator';
+import { Navigator } from '@/components/Navigator/Navigator';
 import { UnderConstruction } from '@/components/UnderConstruction';
 
 const inter = Inter({ subsets: ['latin'] });

@@ -6,6 +6,7 @@ import { Features } from '@/components/Sections/Features';
 import { Presentation } from '@/components/Sections/Presentation';
 import { Testimonials } from '@/components/Sections/Testimonials';
 import { Documentation } from '@/components/Sections/Documentation';
+import { LoggedRedirection } from '@/components/Utils/LoggedRedirection';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Documentation />
       <Testimonials />
       <Footer />
+      <LoggedRedirection />
     </main>
   );
 };

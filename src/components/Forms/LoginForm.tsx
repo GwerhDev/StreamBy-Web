@@ -1,9 +1,12 @@
 "use client"
 
+import { useRouter } from 'next/navigation';
 import s from './LoginForm.module.css';
 import { FormEvent, useState } from 'react';
+import { setUserToken } from '@/helpers/LocalStorage.functions';
 
 export const LoginForm = () => {
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -27,7 +30,12 @@ export const LoginForm = () => {
           'Content-Type': 'application/json'
         }
       });
-      const data = await response.json();
+
+      const userToken = await response.json();
+
+      setUserToken(userToken)
+
+      router.push(`/dashboard`);
 
     } catch (error) {
       console.error(error);

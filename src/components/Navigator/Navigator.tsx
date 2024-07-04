@@ -1,9 +1,9 @@
 "use client"
 
-import s from "@/components/Navigator.module.css";
+import s from "./Navigator.module.css";
 import Link from "next/link";
-import { NavMenu } from "./NavMenu";
-import { NavAuth } from "./NavAuth";
+import { NavMenu } from "@/components/Navigator/NavMenu";
+import { NavAuth } from "@/components/Navigator/NavAuth";
 
 export const Navigator = () => {
 

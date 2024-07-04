@@ -1,3 +1,5 @@
+import { fail } from "assert";
+
 export const message = {
   file: {
     body: {
@@ -12,6 +14,10 @@ export const message = {
   },
   permission: {
     denied: "Permission denied"
+  },
+  auth: {
+    failure: "Auth failure",
+    error: "Auth error"
   },
   user: {
     notfound: "User not found"
