@@ -2,16 +2,17 @@
 
 import s from "./Navigator.module.css";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { NavMenu } from "@/components/Navigator/NavMenu";
 import { NavAuth } from "@/components/Navigator/NavAuth";
-import { useEffect, useState } from "react";
+import { getUserToken } from "@/helpers/LocalStorage.functions";
 
 export const Navigator = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    const token: string = localStorage?.getItem('authToken') || "";
+    const token: string = getUserToken() || "";
 
     console.log(isLoggedIn, userData);
 
