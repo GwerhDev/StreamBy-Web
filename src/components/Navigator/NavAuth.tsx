@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import s from './NavAuth.module.css';
 import { useRouter } from 'next/navigation';

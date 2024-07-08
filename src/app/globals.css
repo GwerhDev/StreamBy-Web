@@ -169,8 +169,17 @@ a:hover {
   min-height: 800px;
   background: var(--background-color-light);
   display: flex;
-  align-items: center;
+}
+
+.flex-dir-col {
   flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
   justify-content: center;
 }
 
