@@ -10,7 +10,7 @@ export const Navigator = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userData, setUserData] = useState(null);
 
-  useEffect(() => {
+/*   useEffect(() => {
     const token = localStorage.getItem('authToken');
     console.log(token)
     if (token) {
@@ -31,7 +31,7 @@ export const Navigator = () => {
           console.error('Error fetching auth status:', error);
         });
     }
-  }, []);
+  }, []); */
 
   return (
     <nav className={s.container}>
