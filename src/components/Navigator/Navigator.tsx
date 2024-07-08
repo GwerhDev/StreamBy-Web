@@ -10,9 +10,11 @@ export const Navigator = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userData, setUserData] = useState(null);
 
-/*   useEffect(() => {
-    const token = localStorage.getItem('authToken');
-    console.log(token)
+  useEffect(() => {
+    const token: string = localStorage?.getItem('authToken') || "";
+
+    console.log(isLoggedIn, userData);
+
     if (token) {
       fetch('/api/controllers/auth', {
         method: 'GET',
@@ -31,7 +33,7 @@ export const Navigator = () => {
           console.error('Error fetching auth status:', error);
         });
     }
-  }, []); */
+  }, []);
 
   return (
     <nav className={s.container}>
