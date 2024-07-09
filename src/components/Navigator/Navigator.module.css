@@ -1,12 +1,13 @@
 .container {
+  gap: 1.5rem;
   width: 100%;
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: space-around;
+  max-width: var(--max-width);
   padding-left: var(--size-5);
   padding-right: var(--size-6);
-  gap: 1.5rem;
-  max-width: var(--max-width);
 }
 
 .logo {

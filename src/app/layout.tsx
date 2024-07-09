@@ -1,15 +1,16 @@
 import './root.css';
 import './globals.css';
-import { Inter } from 'next/font/google';
 import connectDB from '@/app/api/integrations/mongodb';
-import { Navigator } from '@/components/Navigator';
+import { Inter } from 'next/font/google';
+import { Navigator } from '@/components/Navigator/Navigator';
+import { UnderConstruction } from '@/components/UnderConstruction';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'StreamBy | API y Servicios',
-  description: 'Servicios de almacenamiento y transmisión de archivos',
-}
+  title: 'StreamBy | API & Services',
+  description: 'Storage & Streaming services',
+};
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   try {
@@ -22,8 +23,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <body className={inter.className}>
           <Navigator />
           {children}
+          <UnderConstruction />
         </body>
       </html>
-    )
-  }
-}
+    );
+  };
+};

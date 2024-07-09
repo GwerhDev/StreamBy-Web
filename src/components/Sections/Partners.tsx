@@ -8,5 +8,5 @@ export const Partners = () => {
         <p>Improve the performance and multimedia accessibility of your web projects</p>
       </ul>
     </div>
-  )
-}
+  );
+};
