@@ -1,4 +1,4 @@
-export const getUserToken = () => localStorage ? localStorage.getItem('userToken') : "";
+export const getUserToken = () => localStorage.getItem('userToken');
 export const setUserToken = (token: string) => localStorage ? localStorage.setItem('userToken', token) : "";
 
 export const options = () => {
