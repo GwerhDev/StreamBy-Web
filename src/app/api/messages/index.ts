@@ -25,7 +25,7 @@ export const message = {
   login: {
     success: "Login successfull",
     failure: "Login failed",
-    notexistinguser: "User already exists",
+    notexistinguser: "Wrong credentials",
     error: "Error logging in",
     pending: "User pending"
   },

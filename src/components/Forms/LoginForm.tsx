@@ -7,20 +7,26 @@ import { setUserToken } from '@/helpers/LocalStorage.functions';
 
 export const LoginForm = () => {
   const router = useRouter();
+  const [error, setError] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   function handleEmail(e: any) {
     setEmail(e.target.value);
+    setError('');
   }
 
   function handlePassword(e: any) {
     setPassword(e.target.value);
+    setError('');
   }
 
   async function handleSubmit(e: FormEvent) {
     try {
       e.preventDefault();
+
+      if (!email || !password) return setError('Please, fill all the fields');
+
       const formData = { email, password };
 
       const response = await fetch('/api/controllers/login-inner', {
@@ -33,9 +39,15 @@ export const LoginForm = () => {
 
       const userToken = await response.json();
 
-      setUserToken(userToken)
+      console.log(userToken);
 
-      router.push(`/dashboard`);
+      if (!userToken.error) {
+        setUserToken(userToken);
+        router.push(`/dashboard`);
+        return;
+      }
+
+      return setError(userToken.error);;
 
     } catch (error) {
       console.error(error);
@@ -56,6 +68,7 @@ export const LoginForm = () => {
         </li>
       </ul>
       <button>Log in</button>
+      <span><small>{error}</small></span>
     </form>
   );
 };
