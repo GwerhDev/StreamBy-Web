@@ -1,7 +1,7 @@
 "use client"
 
-import { useRouter } from 'next/navigation';
 import s from './LoginForm.module.css';
+import { useRouter } from 'next/navigation';
 import { FormEvent, useState } from 'react';
 import { setUserToken } from '@/helpers/LocalStorage.functions';
 
