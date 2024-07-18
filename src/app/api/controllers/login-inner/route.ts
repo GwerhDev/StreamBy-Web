@@ -10,6 +10,7 @@ export async function POST(request: NextRequest) {
     const req = await request.json();
 
     const user = await UserModel.findOne({ email: req.email });
+    
     if (!user) return new NextResponse(JSON.stringify({ error: message.login.notexistinguser }), {
       status: 400
     });
