@@ -1,8 +1,15 @@
 .container {
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navigator {
   gap: 1.5rem;
   width: 100%;
   display: flex;
-  position: fixed;
   align-items: center;
   justify-content: space-around;
   max-width: var(--max-width);
@@ -19,3 +26,11 @@
   padding-top: .2rem;
 }
 
+.container {
+  transition: background-color 0.3s ease;
+}
+
+.container.scrolled {
+  background-color: var(--background-color-dark-transparency);
+  backdrop-filter: blur(100px);
+}
