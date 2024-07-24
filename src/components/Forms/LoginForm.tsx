@@ -41,13 +41,13 @@ export const LoginForm = () => {
 
       console.log(userToken);
 
-      if (!userToken.error) {
+      if (!userToken?.error) {
         setUserToken(userToken);
         router.push(`/dashboard`);
         return;
       }
 
-      return setError(userToken.error);;
+      return setError(userToken?.error);
 
     } catch (error) {
       console.error(error);
