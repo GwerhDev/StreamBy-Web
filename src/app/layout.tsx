@@ -19,7 +19,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     console.error(error);
   } finally {
     return (
-      <html lang="es">
+      <html lang="en">
         <body className={inter.className}>
           <Navigator />
           {children}
