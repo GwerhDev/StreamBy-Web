@@ -4,6 +4,6 @@ export const apiUrl: string | undefined = process.env.NODE_ENV === "production"
   ? process.env.API_PRODUCTION
   : process.env.API_DEVELOPMENT;
 
-export const mongodbString: string | undefined = process.env.MONGODB_STRING_PRODUCTION;
+export const mongodbString: string | undefined = process.env.MONGODB_STRING;
 
-export const privateSecret: string | undefined = process.env.PRIVATE_SECRET;
+export const privateSecret: string | undefined = process.env.JWT_PRIVATE_SECRET;
