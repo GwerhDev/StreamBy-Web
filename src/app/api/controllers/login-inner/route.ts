@@ -8,6 +8,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(request: NextRequest) {
   try {
     const req = await request.json();
+    console.log(req);
 
     const user = await UserModel.findOne({ email: req.email });
     
@@ -21,8 +22,6 @@ export async function POST(request: NextRequest) {
 
     if (req.password !== null && req.email !== null) {
       const passwordMatch = await bcrypt.compare(req.password, user.password);
-
-      console.log(passwordMatch);
 
       if (passwordMatch) {
         const { _id, username, email } = user;
