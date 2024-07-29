@@ -8,10 +8,9 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(request: NextRequest) {
   try {
     const req = await request.json();
-    
+
     const user = await UserModel.findOne({ email: req.email });
-    console.log(user);
-    
+
     if (!user) return new NextResponse(JSON.stringify({ error: message.login.notexistinguser }), {
       status: 400
     });
@@ -42,7 +41,7 @@ export async function POST(request: NextRequest) {
     return new NextResponse(JSON.stringify({ error: message.login.failure }), {
       status: 400
     });
-    
+
   } catch (error) {
     return new NextResponse(JSON.stringify({ error: message.signup.error }), {
       status: 500
