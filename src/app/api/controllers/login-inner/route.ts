@@ -8,9 +8,9 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(request: NextRequest) {
   try {
     const req = await request.json();
-    console.log(req);
-
+    
     const user = await UserModel.findOne({ email: req.email });
+    console.log(user);
     
     if (!user) return new NextResponse(JSON.stringify({ error: message.login.notexistinguser }), {
       status: 400
