@@ -1,7 +1,5 @@
-import { consts } from "../misc/consts";
-
 export const port: string | undefined = process.env.PORT;
-export const environment: string | undefined = process.env.NODE_ENV || consts.development;
+export const environment: string | undefined = process.env.NODE_ENV;
 
 export const mongodbString: string | undefined = process.env.MONGODB_URI;
 
