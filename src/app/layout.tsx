@@ -17,7 +17,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   try {
     console.log("environment: ", environment);
     console.log("Connecting to MongoDB...");
-    const response = await client.connect();
+    await client.connect();
     console.log("Connected to MongoDB");
   } catch (error) {
     console.error(error);
