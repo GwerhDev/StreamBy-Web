@@ -1,10 +1,9 @@
 import './root.css';
 import './globals.css';
-import client from '@/app/api/integrations/mongodb';
+import connectDB from '@/app/api/integrations/mongodb';
 import { Inter } from 'next/font/google';
 import { Navigator } from '@/components/Navigator/Navigator';
 import { UnderConstruction } from '@/components/UnderConstruction';
-import { environment } from './api/config';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,10 +14,9 @@ export const metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   try {
-    console.log("environment: ", environment);
     console.log("Connecting to MongoDB...");
-    await client.connect();
-    console.log("Connected to MongoDB");
+    const response = await connectDB();
+    console.log(response);
   } catch (error) {
     console.error(error);
   } finally {
