@@ -15,7 +15,7 @@ export const metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   try {
-    console.log("environment: ", environment)
+    console.log("environment: ", environment);
     console.log("Connecting to MongoDB...");
     const response = await connectDB();
     console.log(response);
