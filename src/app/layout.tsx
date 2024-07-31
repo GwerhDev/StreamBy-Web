@@ -1,6 +1,6 @@
 import './root.css';
 import './globals.css';
-import connectDB from '@/app/api/integrations/mongodb';
+import client from '@/app/api/integrations/mongodb';
 import { Inter } from 'next/font/google';
 import { Navigator } from '@/components/Navigator/Navigator';
 import { UnderConstruction } from '@/components/UnderConstruction';
@@ -17,7 +17,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   try {
     console.log("environment: ", environment);
     console.log("Connecting to MongoDB...");
-    const response = await connectDB();
+    const response = await client.connect();
     console.log(response);
   } catch (error) {
     console.error(error);
