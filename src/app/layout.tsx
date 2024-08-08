@@ -12,20 +12,14 @@ export const metadata = {
   description: 'Storage & Streaming services',
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  try {
-
-  } catch (error) {
-    console.error(error);
-  } finally {
-    return (
-      <html lang="en">
-        <body className={inter.className}>
-          <Navigator />
-          {children}
-          <UnderConstruction />
-        </body>
-      </html>
-    );
-  };
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <Navigator />
+        {children}
+        <UnderConstruction />
+      </body>
+    </html>
+  );
 };

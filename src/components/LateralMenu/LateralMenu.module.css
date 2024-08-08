@@ -1,6 +1,5 @@
 .container {
-  width: 350px;
+  width: 90px;
   height: 100%;
   min-height: 100vh;
-  background-color: var(--background-color-dark);
 }
