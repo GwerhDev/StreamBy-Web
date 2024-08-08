@@ -4,9 +4,12 @@ import { message } from "../../messages";
 import { consts } from "../../misc/consts";
 import { createToken } from "../../integrations/jwt";
 import { NextRequest, NextResponse } from "next/server";
+import connectDB from "../../integrations/mongodb";
 
 export async function POST(request: NextRequest) {
   try {
+    await connectDB();
+    
     const req = await request.json();
 
     const user = await UserModel.findOne({ email: req.email });

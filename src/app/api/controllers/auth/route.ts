@@ -2,10 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { message } from "../../messages";
 import { decodeToken } from "../../integrations/jwt";
 import UserModel from "../../models/User";
+import connectDB from "../../integrations/mongodb";
 
 export async function GET(request: NextRequest) {
   try {
-    console.log(request);
+    await connectDB();
+
     const userToken = await request.json();
     const decodedToken: any = await decodeToken(userToken);
 
