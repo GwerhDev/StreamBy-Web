@@ -1,14 +1,14 @@
 
 
 :root {
-  --color-primary: #4F4F84;
-  --color-secondary: #845586;
+  --color-primary: #2D2A2E;
+  --color-secondary: #1E1E1E;
   --color-light-grey: #BEBEBE;
   --color-button-primary: #14AE5C;
   
   --background-color-dark: #1B181E;
-  --background-color-dark-transparency: #1b181ebf;
-  --background-color-light: #16171E;
+  --background-color-dark-transparency: #151415;
+  --background-color-light: #1a1a1c;
   --background-gradient-color: linear-gradient(to left, var(--color-primary), var(--color-secondary));
   
   --size-1: 4px;
