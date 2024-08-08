@@ -1,15 +1,8 @@
 import mongoose from "mongoose";
 import { mongodbString } from "../config";
 
-mongoose.set('strictQuery', false);
-
 const connectDB = async () => {
-  try {
-    await mongoose.connect(mongodbString || "");
-    return "Connected to MongoDB";
-  } catch (error) {
-    console.error("Error connecting to MongoDB:", error);
-  }
+ await mongoose.connect(mongodbString || "");
 };
 
 export default connectDB;
