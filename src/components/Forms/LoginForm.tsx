@@ -39,8 +39,6 @@ export const LoginForm = () => {
 
       const userToken = await response.json();
 
-      console.log(userToken);
-
       if (!userToken?.error) {
         setUserToken(userToken);
         router.push(`/dashboard`);
