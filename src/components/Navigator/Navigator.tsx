@@ -5,7 +5,6 @@ import s from "./Navigator.module.css";
 import Link from "next/link";
 import { NavMenu } from "@/components/Navigator/NavMenu";
 import { NavAuth } from "@/components/Navigator/NavAuth";
-import { getUserToken } from "@/helpers/LocalStorage.functions";
 
 export const Navigator = () => {
   useEffect(() => {
@@ -27,16 +26,17 @@ export const Navigator = () => {
 
   return (
     <div className={s.container}>
-      <nav className={s.navigator}>
-        <Link href={'/'} className={s.logo}>
-          <img src="streamby-logo.svg" alt="logo" width={"110px"} />
-        </Link>
-        <>
-          <NavMenu />
-          <NavAuth />
-        </>
-      </nav>
+      {
+        <nav className={s.navigator}>
+          <Link href={'/'} className={s.logo}>
+            <img src="streamby-logo.svg" alt="logo" width={"110px"} />
+          </Link>
+          <>
+            <NavMenu />
+            <NavAuth />
+          </>
+        </nav>
+      }
     </div>
-  );
-};
-
+  )
+}

@@ -17,5 +17,5 @@ export const NavAuth = () => {
       <ActionButton text="Get started" action={() => redirection("/signup")} />
       <PrimaryButton text="Sign in" action={() => redirection("/login")} />
     </span>
-  );
-};
+  )
+}

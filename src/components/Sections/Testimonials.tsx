@@ -7,5 +7,5 @@ export const Testimonials = () => {
         <h1>OUR CLIENTS</h1>
       </div>
     </section>
-  );
-};
+  )
+}

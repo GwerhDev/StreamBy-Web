@@ -58,5 +58,5 @@ export const SignupForm = () => {
       </ul>
       <button>Sign up</button>
     </form>
-  );
-};
+  )
+}

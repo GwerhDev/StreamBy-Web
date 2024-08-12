@@ -8,5 +8,5 @@ export function UnderConstruction() {
         <p>Under construction</p>
       </i>
     </div>
-  );
-};
+  )
+}

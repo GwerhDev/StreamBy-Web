@@ -68,5 +68,5 @@ export const LoginForm = () => {
       <button>Log in</button>
       <span><small>{error}</small></span>
     </form>
-  );
-};
+  )
+}
