@@ -15,6 +15,10 @@
   flex-direction: column;
 }
 
+.mainMenu h6 {
+  color: rgb(199, 199, 199);
+}
+
 .menuList {
   gap: 0;
   display: flex;
@@ -27,9 +31,11 @@
   padding-right: 1rem;
   padding-top: .2rem;
   padding-bottom: .2rem;
+  color: rgb(199, 199, 199);
 }
 
 .menuList li:hover {
   cursor: pointer;
+  color: rgb(222, 222, 222);
   background-color: rgb(77, 77, 77);
 }
