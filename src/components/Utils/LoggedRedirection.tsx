@@ -13,5 +13,5 @@ export const LoggedRedirection = () => {
     token && router.push('/dashboard');
   }, [token]);
 
-  return <></>;
-};
+  return <></>
+}

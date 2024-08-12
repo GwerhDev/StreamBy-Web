@@ -11,5 +11,5 @@ export const SecondaryButton = (props: any) => {
     <button className={s.container} onClick={handleClick}>
       {text}
     </button>
-  );
-};
+  )
+}

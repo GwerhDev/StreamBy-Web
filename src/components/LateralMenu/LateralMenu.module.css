@@ -1,5 +1,8 @@
 .container {
-  width: 90px;
+  width: 250px;
   height: 100%;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 5px;
+  background-color: rgb(38, 38, 38);
 }

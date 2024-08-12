@@ -3,5 +3,5 @@ export default function Loading() {
     <div className="loader">
       Loading...
     </div>
-  );
-};
+  )
+}

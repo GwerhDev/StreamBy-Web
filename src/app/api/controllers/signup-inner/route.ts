@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
       return new NextResponse(JSON.stringify({ token }), {
         status: 200,
       });
-    };
+    }
 
     const userData = {
       username,
@@ -61,4 +61,4 @@ export async function POST(request: NextRequest) {
       status: 500
     });
   }
-};
+}

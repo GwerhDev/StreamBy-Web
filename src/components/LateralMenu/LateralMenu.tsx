@@ -5,5 +5,5 @@ export const LateralMenu = () => {
     <div className={s.container}>
       
     </div>
-  );
-};
+  )
+}

@@ -23,5 +23,5 @@ export const Features = () => {
         <ActionButton text={"Get started"}/>
       </span>
     </div>
-  );
-};
+  )
+}

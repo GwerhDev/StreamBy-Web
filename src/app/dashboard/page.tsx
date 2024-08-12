@@ -1,13 +1,15 @@
 "use client"
 
-import { LateralMenu } from "@/components/LateralMenu/LateralMenu";
-import { getUserToken } from "@/helpers/LocalStorage.functions";
-import { useRouter } from 'next/navigation';
 import { useEffect } from "react";
+import { useRouter } from 'next/navigation';
+import { getUserToken } from "@/helpers/LocalStorage.functions";
+import { LateralTab } from "@/components/LateralTab/LateralTab";
+import { LateralMenu } from "@/components/LateralMenu/LateralMenu";
+import { Browser } from "@/components/Browser/Browser";
 
 export default function DashboardPage() {
   const router = useRouter();
-  let token : string | null = null;
+  let token: string | null = null;
 
   useEffect(() => {
     token = getUserToken();
@@ -16,7 +18,11 @@ export default function DashboardPage() {
 
   return (
     <div className='dashboard-container'>
-     <LateralMenu />
+      <LateralTab />
+      <div className="dashboard-sections">
+        <LateralMenu />
+        <Browser />
+      </div>
     </div>
-  );
-};
+  )
+}

@@ -11,5 +11,5 @@ export const PrimaryButton = (props: any) => {
     <button className={s.container} onClick={handleClick}>
       {text}
     </button>
-  );
-};
+  )
+}

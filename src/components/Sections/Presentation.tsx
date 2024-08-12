@@ -20,5 +20,5 @@ export const Presentation = () => {
         <img src="landing-image.png" alt="" width={"100%"} />
       </section>
     </div>
-  );
-};
+  )
+}

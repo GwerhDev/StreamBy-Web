@@ -38,5 +38,5 @@ export const Footer = () => {
       </div>
       <img src="streamby-logo.svg" alt="" width={"200"} />
     </section>
-  );
-};
+  )
+}

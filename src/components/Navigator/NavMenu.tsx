@@ -8,5 +8,5 @@ export const NavMenu = () => {
       <Link href={"/documentation"}>Docs</Link>
       <Link href={"/pricing"}>Pricing</Link>
     </ul>
-  );
-};
+  )
+}

@@ -18,5 +18,5 @@ export const Documentation = () => {
         </ul>
       </div>
     </section>
-  );
-};
+  )
+}

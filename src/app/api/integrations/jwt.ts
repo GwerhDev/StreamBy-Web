@@ -10,7 +10,7 @@ export const createClientSecret = async (payload: object, expiresIn: any) => {
 
   const token = jwt.sign(payload, secret, options);
   return token;
-};
+}
 
 export const createToken = async (data: object, time: number) => {
   const expiration = time * 60 * 60 * 24;
@@ -20,7 +20,7 @@ export const createToken = async (data: object, time: number) => {
   };
   const token = jwt.sign(payload, secret);
   return token;
-};
+}
 
 export const decodeToken = async (token: string) => {
   try {
@@ -29,4 +29,4 @@ export const decodeToken = async (token: string) => {
   } catch (error) {
     return error;
   }
-};
+}
