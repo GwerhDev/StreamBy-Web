@@ -3,7 +3,7 @@
   height: 100%;
   padding: 1rem;
   min-width: 250px;
-  border-top-left-radius: 5px;
+  border-top-left-radius: 10px;
   display: flex;
   flex-direction: column;
   background-color: rgb(38, 38, 38);
