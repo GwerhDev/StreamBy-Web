@@ -9,6 +9,12 @@
   background-color: rgb(38, 38, 38);
 }
 
+.mainMenu {
+  gap: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .menuList {
   gap: 0;
   display: flex;

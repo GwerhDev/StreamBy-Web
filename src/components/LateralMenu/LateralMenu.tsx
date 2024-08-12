@@ -6,15 +6,15 @@ export const LateralMenu = () => {
   return (
     <div className={s.container}>
       <h2>{projectName}</h2>
-      <div>
+      <div className={s.mainMenu}>
         <h6>MAIN MENU</h6>
         <h4>DASHBOARD</h4>
       </div>
-        <ul className={s.menuList}>
-          <li>
-            Overview
-          </li>
-        </ul>
+      <ul className={s.menuList}>
+        <li>
+          Overview
+        </li>
+      </ul>
       <h4>STORAGE</h4>
       <ul className={s.menuList}>
         <li>
