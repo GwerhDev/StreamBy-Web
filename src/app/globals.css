@@ -166,9 +166,7 @@ a:hover {
 .dashboard-container {
   width: 100vw;
   height: 100vh;
-  min-height: 800px;
   display: flex;
-  overflow: hidden;
   background: var(--background-color-light);
 }
 
@@ -187,7 +185,6 @@ a:hover {
 .loader {
   width: 100vw;
   height: 100vh;
-  min-height: 800px;
   background: var(--background-color-light);
   display: flex;
   align-items: center;
