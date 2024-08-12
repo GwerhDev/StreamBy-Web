@@ -5,8 +5,9 @@
   min-width: 250px;
   border-top-left-radius: 10px;
   display: flex;
+  overflow-y: auto;
   flex-direction: column;
-  background-color: rgb(38, 38, 38);
+  background-color: rgb(38, 38, 38); 
 }
 
 .mainMenu {
