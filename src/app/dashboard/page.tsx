@@ -6,6 +6,7 @@ import { getUserToken } from "@/helpers/LocalStorage.functions";
 import { LateralTab } from "@/components/LateralTab/LateralTab";
 import { LateralMenu } from "@/components/LateralMenu/LateralMenu";
 import { Browser } from "@/components/Browser/Browser";
+import { LogoutModal } from "@/components/Modals/LogoutModal";
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -23,6 +24,7 @@ export default function DashboardPage() {
         <LateralMenu />
         <Browser />
       </div>
+      <LogoutModal />
     </div>
   )
 }

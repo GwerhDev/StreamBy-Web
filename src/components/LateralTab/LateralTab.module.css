@@ -8,3 +8,17 @@
   align-items: center;
   flex-direction: column;
 }
+
+.projects {
+  height: 100%;
+}
+
+.logout {
+  border-top: solid #c7c7c7 1px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logout:hover {
+  cursor: pointer;
+}
