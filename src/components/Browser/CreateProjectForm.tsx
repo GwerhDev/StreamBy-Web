@@ -16,6 +16,7 @@ export const CreateProjectForm = (props: any) => {
 
   return (
     <form className={s.container} onSubmit={handleOnSubmit}>
+      <h1>New Project</h1>
       <span>
         <input type="file" />
       </span>
