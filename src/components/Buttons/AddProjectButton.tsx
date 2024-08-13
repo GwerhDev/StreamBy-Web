@@ -1,8 +1,11 @@
 import s from './AddProjectButton.module.css';
 
-export const AddProjectButton = () => {
+export const AddProjectButton = (props: any) => {
+  const { onClick } = props || null;
+
   function handleOnClick() {
     console.log("create project");
+    onClick && onClick();
   }
 
   return (
