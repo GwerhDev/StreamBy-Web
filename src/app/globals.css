@@ -190,7 +190,7 @@ a:hover {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  position: fixed;
+  position: absolute;
 }
 
 .dashboard-sections {
