@@ -3,7 +3,11 @@ import { ProjectButton } from '../Buttons/ProjectButton';
 import { AddProjectButton } from '../Buttons/AddProjectButton';
 
 export const LateralTab = (props: any) => {
-  const { projectList, action } = props || null;
+  const { projectList, action, setCreateProject } = props || null;
+
+  function handleOnclick() {
+    setCreateProject(true);
+  }
 
   const handleLogoutModal = () => {
     const logoutModal = document.getElementById('logout-modal') as HTMLDivElement | null;
@@ -23,7 +27,7 @@ export const LateralTab = (props: any) => {
             </li>
           ))
         }
-        <AddProjectButton />
+        <AddProjectButton onClick={handleOnclick} />
       </ul>
       <span className={s.logout} onClick={handleLogoutModal}>
         <img src="logout-icon.svg" alt="Logout Icon" width={40} />

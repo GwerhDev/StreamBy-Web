@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { ActionButton } from '../Buttons/ActionButton';
 import s from './EmptyBrowser.module.css';
-import { CreateProjectForm } from './CreateProjectForm';
+import { CreateProjectForm } from '../Forms/CreateProjectForm';
 
-export const EmptyBrowser = () => {
-  const [createProject, setCreateProject] = useState(false);
+export const EmptyBrowser = (props: any) => {
+  const { createProject, setCreateProject } = props || null;
 
   function handleOnClick() {
     setCreateProject(true);

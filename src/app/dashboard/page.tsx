@@ -13,6 +13,7 @@ export default function DashboardPage() {
   const router = useRouter();
   let token: string | null = null;
   const projectList: any[] = [];
+  const [createProject, setCreateProject] = useState(false);
   const [currentProject, setCurrentProject] = useState(null);
 
   function handleCurrentProject(project: any) {
@@ -26,7 +27,7 @@ export default function DashboardPage() {
 
   return (
     <div className='dashboard-container'>
-      <LateralTab projectList={projectList} action={handleCurrentProject} />
+      <LateralTab projectList={projectList} action={handleCurrentProject} setCreateProject={setCreateProject} />
       {
         currentProject
           ?
@@ -36,7 +37,7 @@ export default function DashboardPage() {
           </div>
           :
           <div className="dashboard-sections">
-            <EmptyBrowser />
+            <EmptyBrowser createProject={createProject} setCreateProject={setCreateProject} />
           </div>
       }
       <LogoutModal />
