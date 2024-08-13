@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { FormEvent, useState } from 'react';
 import { setUserToken } from '@/helpers/LocalStorage.functions';
 import Loading from '@/app/loading';
+import { ActionButton } from '../Buttons/ActionButton';
 
 export const LoginForm = () => {
   const router = useRouter();
@@ -74,7 +75,7 @@ export const LoginForm = () => {
                 <input onInput={handlePassword} type="password" placeholder='********' />
               </li>
             </ul>
-            <button>Log in</button>
+            <ActionButton text='Log in' type='submit' />
             <span><small>{error}</small></span>
           </form>
       }
