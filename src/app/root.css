@@ -1,16 +1,16 @@
 
 
 :root {
-  --color-primary: #2D2A2E;
-  --color-secondary: #1E1E1E;
+  --color-primary: #38B6FF;
+  --color-secondary: #54c0ff;
   --color-light-grey: #BEBEBE;
   --color-button-primary: #38B6FF;
   --color-button-primary-hover: #54c0ff;
   
-  --background-color-dark: #1B181E;
-  --background-color-dark-transparency: #151415;
+  --background-color-dark: #2D2A2E;
+  --background-color-dark-transparency: #1E1E1E;
   --background-color-light: #1a1a1c;
-  --background-gradient-color: linear-gradient(to left, var(--color-primary), var(--color-secondary));
+  --background-gradient-color: linear-gradient(to left, var(--background-color-dark), var(--background-color-light));
   
   --size-1: 4px;
   --size-2: 8px;
