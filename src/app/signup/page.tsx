@@ -4,7 +4,7 @@ import { LoggedRedirection } from '@/components/Utils/LoggedRedirection';
 
 export default function LoginPage() {
   return (
-    <div className='dashboard-container justify-content-center align-items-center flex-dir-col'>
+    <div className='d-flex h-full justify-content-center align-items-center flex-dir-col'>
       <Navigator />
       <SignupForm />
       <LoggedRedirection />

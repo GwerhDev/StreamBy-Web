@@ -28,7 +28,7 @@ export const Navigator = () => {
     <div className={s.container}>
       {
         <nav className={s.navigator}>
-          <Link href={'/'} className={s.logo}>
+          <Link href={'/home'} className={s.logo}>
             <img src="streamby-logo.svg" alt="logo" width={"110px"} />
           </Link>
           <>
