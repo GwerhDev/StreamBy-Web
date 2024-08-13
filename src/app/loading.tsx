@@ -1,7 +1,7 @@
 export default function Loading() {
   return (
-    <div className="loader">
-      Loading...
+    <div className="loader d-flex pl-3 pr-3">
+      <img src="streamby-logo.svg" className="logo d-flex" width={"50%"} alt="" />
     </div>
   )
 }
