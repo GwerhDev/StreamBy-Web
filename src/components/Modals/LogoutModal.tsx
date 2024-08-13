@@ -21,11 +21,11 @@ export const LogoutModal = () => {
   return (
     <div className={s.container} id='logout-modal'>
       <form className={s.modalForm} action="">
-        <h1>Te esperamos de vuelta</h1>
-        <p>¿Confirma que desea cerrar sesión?</p>
+        <h1>Are you leaving already?</h1>
+        <p>Confirm that you want to log out</p>
         <ul>
-          <PrimaryButton action={handleLogout} text='Cerrar sesión' type='button' />
-          <SecondaryButton action={handleCancelLogout} text='Cancelar' type='button' />
+          <PrimaryButton onClick={handleLogout} text='Logout' type='button' />
+          <SecondaryButton onClick={handleCancelLogout} text='Cancel' type='button' />
         </ul>
       </form>
     </div>

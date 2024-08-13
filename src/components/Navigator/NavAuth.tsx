@@ -14,8 +14,8 @@ export const NavAuth = () => {
 
   return (
     <span className={s.container}>
-      <ActionButton text="Get started" action={() => redirection("/signup")} />
-      <PrimaryButton text="Sign in" action={() => redirection("/login")} />
+      <ActionButton text="Get started" onClick={() => redirection("/signup")} />
+      <PrimaryButton text="Sign in" onClick={() => redirection("/login")} />
     </span>
   )
 }
