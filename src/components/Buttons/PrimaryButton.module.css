@@ -4,3 +4,7 @@
   text-wrap: nowrap;
   background-color: white;
 }
+
+.container:hover {
+  color: white;
+}
