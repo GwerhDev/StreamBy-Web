@@ -1,14 +1,14 @@
 import s from './PrimaryButton.module.css';
 
 export const PrimaryButton = (props: any) => {
-  const { text, action, type } = props;
+  const { text, onClick, type } = props || null;
 
-  function handleClick() {
-    action();
+  function handleOnClick() {
+    onClick && onClick();
   }
 
   return (
-    <button className={s.container} onClick={handleClick} type={type || "button"} >
+    <button className={s.container} onClick={handleOnClick} type={type || "button"} >
       {text}
     </button>
   )

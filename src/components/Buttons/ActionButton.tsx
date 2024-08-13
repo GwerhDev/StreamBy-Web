@@ -1,14 +1,14 @@
 import s from './ActionButton.module.css';
 
 export const ActionButton = (props: any) => {
-  const { text, action, img } = props;
+  const { text, onClick, img } = props || null;
 
-  function handleClick() {
-    action();
+  function handleOnClick() {
+    onClick && onClick();
   }
 
   return (
-    <button className={s.container} onClick={handleClick} style={{ backgroundImage: `url(${img})` }}>
+    <button className={s.container} onClick={handleOnClick} style={{ backgroundImage: `url(${img})` }}>
       {text}
     </button>
   )
