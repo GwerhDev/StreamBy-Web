@@ -17,11 +17,13 @@ export default function DashboardPage() {
   const projectList = [
     {
       _id: 1,
+      img: 'https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31',
       name: 'Project 1',
       description: 'This is a description of the project',
     },
     {
       _id: 2,
+      img: '',
       name: 'Project 2',
       description: 'This is a description of the project',
     },
