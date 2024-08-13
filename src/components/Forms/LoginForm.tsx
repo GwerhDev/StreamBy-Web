@@ -4,12 +4,14 @@ import s from './LoginForm.module.css';
 import { useRouter } from 'next/navigation';
 import { FormEvent, useState } from 'react';
 import { setUserToken } from '@/helpers/LocalStorage.functions';
+import Loading from '@/app/loading';
 
 export const LoginForm = () => {
   const router = useRouter();
   const [error, setError] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showLoader, setShowLoader] = useState(false);
 
   function handleEmail(e: any) {
     setEmail(e.target.value);
@@ -28,6 +30,7 @@ export const LoginForm = () => {
       if (!email || !password) return setError('Please, fill all the fields');
 
       const formData = { email, password };
+      setShowLoader(true);
 
       const response = await fetch('/api/controllers/login-inner', {
         method: 'POST',
@@ -38,12 +41,13 @@ export const LoginForm = () => {
       });
 
       const userToken = await response.json();
-
+      
       if (!userToken?.error) {
         setUserToken(userToken);
         router.push(`/dashboard`);
         return;
       }
+      setShowLoader(false);
 
       return setError(userToken?.error);
 
@@ -53,20 +57,27 @@ export const LoginForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>Log in</h1>
-      <ul className={s.container}>
-        <li className={s.inputContainer}>
-          <label htmlFor="">Email</label>
-          <input onInput={handleEmail} type="email" placeholder='example@mail.com' />
-        </li>
-        <li className={s.inputContainer}>
-          <label htmlFor="">Password</label>
-          <input onInput={handlePassword} type="password" placeholder='********' />
-        </li>
-      </ul>
-      <button>Log in</button>
-      <span><small>{error}</small></span>
-    </form>
+    <div>
+      {
+        showLoader ?
+          <Loading />
+          :
+          <form onSubmit={handleSubmit}>
+            <h1>Log in</h1>
+            <ul className={s.container}>
+              <li className={s.inputContainer}>
+                <label htmlFor="">Email</label>
+                <input onInput={handleEmail} type="email" placeholder='example@mail.com' />
+              </li>
+              <li className={s.inputContainer}>
+                <label htmlFor="">Password</label>
+                <input onInput={handlePassword} type="password" placeholder='********' />
+              </li>
+            </ul>
+            <button>Log in</button>
+            <span><small>{error}</small></span>
+          </form>
+      }
+    </div>
   )
 }
