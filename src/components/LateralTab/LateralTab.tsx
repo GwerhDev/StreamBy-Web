@@ -1,5 +1,6 @@
 import s from './LateralTab.module.css';
 import { ProjectButton } from '../Buttons/ProjectButton';
+import { AddProjectButton } from '../Buttons/AddProjectButton';
 
 export const LateralTab = (props: any) => {
   const { projectList, action } = props || null;
@@ -22,7 +23,7 @@ export const LateralTab = (props: any) => {
             </li>
           ))
         }
-        <ProjectButton />
+        <AddProjectButton />
       </ul>
       <span className={s.logout} onClick={handleLogoutModal}>
         <img src="logout-icon.svg" alt="Logout Icon" width={40} />
