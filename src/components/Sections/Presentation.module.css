@@ -95,6 +95,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 25px;
   }
 
   .imageContainer {
@@ -125,7 +126,6 @@
 
   .container {
     flex-direction: column;
-    padding: 100px;
   }
 
   .textAlign {
