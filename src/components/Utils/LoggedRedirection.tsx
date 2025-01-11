@@ -14,8 +14,7 @@ export const LoggedRedirection = (props: any) => {
     token = getUserToken();
     if (to) {
       token ? router.push('/dashboard') : router.push(to);
-    }
-    else {
+    } else {
       token ? router.push('/dashboard') : null;
     }
   }, [token]);

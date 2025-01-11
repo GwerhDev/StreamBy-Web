@@ -17,7 +17,13 @@ export const Presentation = () => {
         </span>
       </section>
       <section className={s.rightSection}>
-        <img src="landing-image.png" alt="" width={"100%"} />
+        <div className={s.widthWrapper}>
+          <div className={s.wrapper}>
+            <div className={s.imageContainer}>
+              <img className={s.aiImg} src="landing-image.jpg" alt="" width={"100%"} />
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   )
