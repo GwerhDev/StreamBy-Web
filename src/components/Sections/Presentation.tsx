@@ -20,7 +20,7 @@ export const Presentation = () => {
         <div className={s.widthWrapper}>
           <div className={s.wrapper}>
             <div className={s.imageContainer}>
-              <img className={s.aiImg} src="landing-image.jpg" alt="" width={"100%"} />
+              <img src="landing-image.jpg" alt="" width={"100%"} />
             </div>
           </div>
         </div>

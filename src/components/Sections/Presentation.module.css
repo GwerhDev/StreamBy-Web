@@ -1,7 +1,7 @@
 .container {
   gap: var(--size-1);
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   padding-left: var(--size-6);
@@ -102,10 +102,6 @@
     width: auto;
   }
 
-  .buttonIA {
-    width: 100%;
-  }
-
   .buttonContact {
     width: 100%;
     margin: 0;
@@ -125,6 +121,7 @@
   }
 
   .container {
+    padding-top: var(--size-12);
     flex-direction: column;
   }
 
