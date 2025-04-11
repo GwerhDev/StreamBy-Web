@@ -13,7 +13,7 @@ export const Presentation = () => {
         <p>Store and manage files for your web projects</p>
         <span className={s.buttons}>
           <ActionButton text="Try free" />
-          <SecondaryButton text="Pricing" />
+          <SecondaryButton text="Documentation" />
         </span>
       </section>
       <section className={s.rightSection}>
