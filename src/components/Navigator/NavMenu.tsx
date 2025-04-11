@@ -6,7 +6,6 @@ export const NavMenu = () => {
     <ul className={s.container}>
       <Link href={"/overview"}>Overview</Link>
       <Link href={"/documentation"}>Docs</Link>
-      <Link href={"/pricing"}>Pricing</Link>
     </ul>
   )
 }
