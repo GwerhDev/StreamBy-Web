@@ -4,7 +4,6 @@ import s from "./Navigator.module.css";
 import { useEffect } from "react";
 import Link from "next/link";
 import { NavMenu } from "@/components/Navigator/NavMenu";
-import { NavAuth } from "@/components/Navigator/NavAuth";
 
 export const Navigator = () => {
   useEffect(() => {
@@ -33,7 +32,6 @@ export const Navigator = () => {
           </Link>
           <>
             <NavMenu />
-            <NavAuth />
           </>
         </nav>
       }
